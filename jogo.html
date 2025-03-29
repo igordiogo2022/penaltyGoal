@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/jogo.css">
+    <title>Penalty Goal</title>
+</head>
+<body onload="timesJogo()">
+    <section>
+        <div id="placar">
+            <div class="timePlacar">
+                <div class="time"></div> <p class="contagemAcertos"></p>
+            </div>
+            <div class="timePlacar"> 
+                <div class="time"></div> <p class="contagemAcertos"></p>
+            </div>
+        </div>
+        <div id="narracao"></div>
+    </section>
+
+    <main>
+        <h2 id="fraseVez">ESCOLHA UM LUGAR PARA CHUTAR</h2>
+        <div id="penaltiOpcoes">
+            <div class="penalti" onclick="analisarChute(1)">1</div>
+            <div class="penalti" onclick="analisarChute(2)">2</div>
+            <div class="penalti" onclick="analisarChute(3)">3</div>
+            <div class="penalti" onclick="analisarChute(4)">4</div>
+            <div class="penalti" onclick="analisarChute(5)">5</div>
+            <div class="penalti" onclick="analisarChute(6)">6</div>
+        </div>
+        <div id="fimJogo">
+            <h2>FIM DE JOGO</h2>
+            <div id="placarFinal">
+                <div class="time"></div> 
+                <p id="resultado">5 x 4</p>
+                <div class="time"></div>
+            </div>
+            <a href="cdb.html" id="botao" onclick="cdb()">Próximo</a>
+        </div>
+    </main>
+    </body>
+    <script src="app.js"></script>
+</html>
