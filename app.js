@@ -3,8 +3,12 @@ var golsPlayer = 0;
 var golsAdversario = 0;
 var contagemPlayer = '';
 var contagemAdversario = '';
-var qtdBatidas = 0;
+var qtdAtualBatidas = 0;
+var qtdGeralBatidas = 5;
+var desempate = 'desativado';
 var a = 1;
+
+
 function obterId(timeId){
     localStorage.setItem('timePlayer', timeId);
     localStorage.setItem('faseCdb', 16);
@@ -203,39 +207,70 @@ function mudarVez(){
     }
     placar[0].innerHTML = contagemPlayer;
     placar[1].innerHTML = contagemAdversario;
-    qtdBatidas = qtdBatidas + 0.5;
+    qtdAtualBatidas = qtdAtualBatidas + 0.5;
+    
 }
 
 function analisarChute(posPlayer){
-    posAdversario = Math.round(Math.random()*6);
-    if(posPlayer==posAdversario){
-        if(vez=='player'){
-            contagemPlayer = contagemPlayer + ' X';
-        }else if(vez=='adversario'){
-            contagemAdversario = contagemAdversario + ' X';
+    narracao = document.querySelector('#narracaoTexto');
+
+    posAdversario = Math.round(Math.random()*5)+1;
+    
+    if(vez=='player'){
+        if(qtdGeralBatidas!=5 && (qtdGeralBatidas-1)%5==0){
+            contagemPlayer = '';
+            contagemAdversario = '';
         }
-    }else{
-        if(vez=='player'){
+        if(posPlayer==posAdversario){
+            contagemPlayer = contagemPlayer + ' X';
+            narracao.innerHTML = 'DEFENDEUUUUU, GOLEIRO BUSCOU NO '+posAdversario;
+        }else{
             golsPlayer++;
             contagemPlayer = contagemPlayer + ' O';
-        }else if(vez=='adversario'){
+            narracao.innerHTML = 'Chute no '+posPlayer+' e goleiro no '+posAdversario;
+        }
+    }else if(vez=='adversario'){
+        if(posPlayer==posAdversario){
+            contagemAdversario = contagemAdversario + ' X';
+        narracao.innerHTML = 'DEFENDEUUUUU, GOLEIRO BUSCOU NO '+posPlayer;
+        }else{
             golsAdversario++;
             contagemAdversario = contagemAdversario + ' O';
+            narracao.innerHTML = 'Chute no '+posAdversario+' e goleiro no '+posPlayer;
+        }
+        if(desempate=='ativado'){
+            if(golsPlayer>golsAdversario){
+                fimJogo('player');
+            }else if(golsAdversario>golsPlayer){
+                fimJogo('adversario');
+            }
         }
     }
 
-    if((golsPlayer-golsAdversario)>(5-qtdBatidas)){
-        localStorage.setItem('vencedorJogo', 'player')
-        fimJogo();
-    }else if((golsAdversario-golsPlayer)>(5-qtdBatidas)){
-        localStorage.setItem('vencedorJogo', 'adversario')
-        fimJogo();
+    
+    console.log(qtdAtualBatidas)
+    console.log('geral:'+qtdGeralBatidas)
+    console.log(golsPlayer, golsAdversario);
+    
+    if(qtdAtualBatidas>=4.5 && golsAdversario==golsPlayer){
+        qtdGeralBatidas++;
+        desempate = 'ativado';
     }
     
+    if(desempate=='desativado'){
+        if((golsPlayer-golsAdversario)>(qtdGeralBatidas-qtdAtualBatidas)){
+            fimJogo('player');
+        }else if((golsAdversario-golsPlayer)>(qtdGeralBatidas-qtdAtualBatidas)){
+            fimJogo('adversario');
+        }
+    }
+
     mudarVez();
 }
 
-function fimJogo(){
+function fimJogo(vencedor){
+    localStorage.setItem('vencedorJogo', vencedor);
+
     fimJogo = document.querySelector('#fimJogo');
     penaltis = document.querySelector('#penaltiOpcoes');
     fraseVez = document.querySelector('#fraseVez');

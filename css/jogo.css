@@ -29,6 +29,13 @@ section{
     background-color: var(--cor1);
     border-radius: 24px;
 }
+#narracaoTexto{
+    display: flex;
+    padding: 2% 5%;
+    font-size: 25px;
+    font-family: var(--fonte1);
+    color: white;
+}
 #placar{
     width: 35%;
 }
