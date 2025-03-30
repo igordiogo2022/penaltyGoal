@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root{
-    --cor1: rgb(99, 94, 94);
+    --cor1: rgb(60, 60, 60);
     --cor2: rgb(182, 9, 9);
     --cor3: rgb(28, 36, 148);
     --cor4: rgb(2, 146, 2);
+    --cor5: rgb(255, 255, 255);
     --fonte1: "Poppins", serif;
 }
 *{
@@ -106,8 +107,9 @@ main{
     align-items: center;
     width: 200px;
     height: 60px;
-    font-size: 22px;
-    color: black;
+    font-size: 25px;
+    color: var(--cor5);
+    font-family: var(--fonte1);
     text-decoration: none;
     box-shadow: 10px 7px 10px black;
 }
@@ -136,4 +138,51 @@ h2{
     color: white;
     font-family: var(--fonte1);
     box-shadow: 10px 5px 10px black;
+}
+
+@media (max-width: 500px) {
+    body{
+        padding: 5%;
+        gap: 10px;
+    }
+    section{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #narracao, #placar{
+        width: 100%;
+    }
+    #narracao{
+        height: 100px;
+    }
+    #narracaoTexto{
+        font-size: 22px;
+    }
+    h2{
+      font-size: 15px;  
+    }
+    #fimJogo h2{
+        font-size: 25px;  
+    }
+    #placarFinal .time{
+        width: 35%;
+        height: 45%;
+    }
+    main{
+        padding: 5% 5%;
+        width: 90%;
+        gap: 20px;
+    }
+    #resultado{
+        font-size: 30px;
+    }
+    #penaltiOpcoes{
+        grid-auto-rows: 10vh;
+    }
+    .time{
+        width: 40%;
+    }
+    .contagemAcertos{
+        font-size: 35px;
+    }
 }

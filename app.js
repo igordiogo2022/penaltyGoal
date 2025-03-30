@@ -75,7 +75,6 @@ function passarFazerCdb(){
             }
         }
         
-        
         if(golsDono>golsVisitante){
             listaClassificados.push(listaTimes[i*2]);
         }else if(golsVisitante>golsDono){
@@ -96,7 +95,6 @@ function passarFazerCdb(){
     for(let i=0;i<listaClassificados.length;i++){
         times[i].id = listaClassificados[i];
     }
-    
     
     localStorage.setItem('listaTimes', listaClassificados);
     
@@ -121,9 +119,6 @@ function cdbOitavas(){
     for(let i=14; i>=0; i--){
         //sorteia um numero que será o index do item
         index = Math.round(Math.random()*(listaTimes.length-1));
-        console.log(listaTimes);
-        console.log(index);
-        console.log(listaTimes[index]);
         //adiciona o item a lista nova
         listaTimesSorteada.push(listaTimes[index]);
         
@@ -133,7 +128,6 @@ function cdbOitavas(){
     
     times = document.querySelectorAll(".opcao");
 
-    console.log(listaTimesSorteada);
     
     //adiciona o id na ordem sorteada
     for(let i=0;i<listaTimesSorteada.length;i++){
@@ -252,9 +246,6 @@ function analisarChute(posPlayer){
     }
 
     
-    console.log(qtdAtualBatidas)
-    console.log('geral:'+qtdGeralBatidas)
-    console.log(golsPlayer, golsAdversario);
     
     if(qtdAtualBatidas>=4.5 && golsAdversario==golsPlayer){
         qtdGeralBatidas++;
