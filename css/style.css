@@ -49,14 +49,18 @@ body{
 }
 
 @media (max-width: 500px) {
+    body{
+        padding: 30px 15px;
+    }
     #titulo{
         font-size: 23px;
     }
     #times{
         grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 30%;
+        grid-auto-rows: 38%;
     }
     .opcao{
         width: 100%;
+        margin: 0;
     }
 }

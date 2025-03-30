@@ -142,8 +142,16 @@ function cdbOitavas(){
 
 function cdbQuartas(){
     passarFazerCdb();
+
+    // #jogos1{
+    //     border-end-end-radius: 0;
+    //     border-end-start-radius: 0;
+    //     padding-bottom: 0;
+    // }
     
     jogosDiv = document.querySelectorAll('.jogos');
+    jogosDiv[0].style.borderRadius = '8px';
+    jogosDiv[0].style.padding = '30px 0';
     jogosDiv[1].style.display = 'none';
 }
 
@@ -177,6 +185,7 @@ function cdbCampeao(){
 
     botao = document.querySelector('#botao');
     botao.href = 'index.html';
+    botao.innerHTML = 'Jogar Novamente';
 
     carregarImagensTimes('.timeCampeao');
 }

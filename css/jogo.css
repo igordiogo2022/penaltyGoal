@@ -143,11 +143,11 @@ h2{
 @media (max-width: 500px) {
     body{
         padding: 5%;
-        gap: 10px;
+        gap: 35px;
     }
     section{
         flex-direction: column;
-        gap: 10px;
+        gap: 35px;
     }
     #narracao, #placar{
         width: 100%;
@@ -161,12 +161,16 @@ h2{
     h2{
       font-size: 15px;  
     }
+    #fimJogo{
+        height:30vh;
+        gap: 0px;
+    }
     #fimJogo h2{
         font-size: 25px;  
     }
     #placarFinal .time{
         width: 35%;
-        height: 45%;
+        height: 60%;
     }
     main{
         padding: 5% 5%;
@@ -184,5 +188,9 @@ h2{
     }
     .contagemAcertos{
         font-size: 35px;
+    }
+    #botao{
+        width: 150px;
+        height: 60px;
     }
 }
