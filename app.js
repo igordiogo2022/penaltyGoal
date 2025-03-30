@@ -109,7 +109,7 @@ function cdbOitavas(){
     var timePlayerId = localStorage.getItem('timePlayer');
     
     //uma lista normal e uma embaralhada
-    const listaTimes = ['sccp','cep','spfc','santos','fla','flu','btfg','vasco','inter','gremio','cruzeiro','atl_mg','ath_pr','fort','bahia'];
+    const listaTimes = ['sccp','cep','spfc','santos','fla','flu','btfg','vasco','inter','gremio','cruzeiro','atl_mg','ath_pr','coxa','fort','ceara','bahia','vito','sport','rbb'];
     const listaTimesSorteada = [];
     
     //o time do player é adicionado como primeiro e excluido da lista times para evitar repetições
@@ -118,10 +118,12 @@ function cdbOitavas(){
     listaTimes.splice(indexT, 1);
     
     //embaralha os times
-    for(let i=listaTimes.length-1; i>=0; i--){
+    for(let i=14; i>=0; i--){
         //sorteia um numero que será o index do item
-        index = Math.round(Math.random()*i);
-        
+        index = Math.round(Math.random()*(listaTimes.length-1));
+        console.log(listaTimes);
+        console.log(index);
+        console.log(listaTimes[index]);
         //adiciona o item a lista nova
         listaTimesSorteada.push(listaTimes[index]);
         
@@ -130,6 +132,8 @@ function cdbOitavas(){
     }
     
     times = document.querySelectorAll(".opcao");
+
+    console.log(listaTimesSorteada);
     
     //adiciona o id na ordem sorteada
     for(let i=0;i<listaTimesSorteada.length;i++){
