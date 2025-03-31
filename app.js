@@ -260,7 +260,6 @@ function analisarChute(posPlayer){
     narracao = document.querySelector('#narracaoTexto');
 
     posAdversario = Math.round(Math.random()*5)+1;
-    posAdversario = 1;
     
     if(vez=='player'){
         if(qtdGeralBatidas!=5 && (qtdGeralBatidas-1)%5==0){
