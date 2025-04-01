@@ -5,8 +5,8 @@
 ➤ Projeto 100% solo criado somente por mim(Igor Diogo), um jogo de disputas de pênaltis com times brasileiros.
 <br><br>
 ### Como se funciona❓
-➤ Você seleciona seu time entre os 20 times disponíveis e ao seguir seleciona a competição(apenas Copa do Brasil disponível), na partida voce seleciona um lugar para chutar,
-tendo 6 lugares possível, a máquina sorteia uma valor entre para defender/chutar, vence aquele que acertar mais nas primeiras 5 batidas, em caso de empate segue cobranças alternadas
+➤ Você seleciona seu time entre os 20 times disponíveis e ao seguir seleciona a competição(apenas Copa do Brasil disponível), na partida você seleciona um lugar para chutar,
+tendo 6 lugares possíveis, a máquina sorteia uma valor de 1 a 6 para defender/chutar, vence aquele que acertar mais nas primeiras 5 batidas, em caso de empate segue cobranças alternadas
 até que haja um vencedor, se o player vence ele passa de fase até que seja campeão.
 <br><br>
 ### Tecnologias usadas🌐
