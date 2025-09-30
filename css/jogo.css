@@ -141,7 +141,7 @@ h2{
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 20vh;
     width: 100%;
-    column-gap: 10%;
+    column-gap: 5%;
     row-gap: 25px;
 }
 .penalti{

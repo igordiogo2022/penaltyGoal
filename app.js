@@ -1,25 +1,25 @@
 //lista de times e seus jogadores
 const listaTimes = [
-['sccp',    'Memphis Depay',   'Yuri Alberto',      'Rodrigo Garro',    'Carrilho',         'Raniele',          'Hugo Souza'],
-['cep',     'Raphael Veiga',   'Estêvão',           'Richard Rios',     'Vitor Roque',      'Felipe Anderson',  'Weverton'],
-['spfc',    'Lucas Moura',     'Oscar',             'Luciano',          'Calleri',          'Luiz Gustavo',     'Rafael'],
-['santos',  'Neymar',          'Guilherme',         'Soteldo',          'Thacianno',        'João Schmidt',     'Gabriel Brazão'],
-['fla',     'Pedro',           'Arrascaeta',        'Gerson',           'De La Cruz',       'Wesley',           'Rossi'],
-['flu',     'Germán Cano',     'John Arias',        'Ganso',            'Martinelli',       'Canobbio',         'Fábio'],
-['btfg',    'Igor Jesus',      'Savarino',          'Marlon Freitas',   'Gregore',          'Alexander Barboza','John'],
-['vasco',   'Pablo Vegetti',   'P. Coutinho',       'Hugo Moura',       'Nuno Moreira',     'Lucas Piton',      'Leo Jardim'],
-['inter',   'Alan Patrick',    'Enner Valencia',    'Wesley',           'Bruno Henrique',   'Vitão',            'Anthoni'],
-['gremio',  'Braithwaite',     'Edenílson',         'Villlasanti',      'Monsalve',         'Cristian Pavón',   'Tiago Volpi'],
-['cruzeiro','Gabriel',         'Dudu',              'Matheus Pereira',  'Matheus Henrique', 'Kaio Jorge',       'Cássio'],
-['atl_mg',  'Hulk',            'Rony',              'Gustavo Scarpa',   'Gabriel Menino',   'Guilherme Arana',  'Everson'],
-['ath_pr',  'Zapelli',         'Luiz Fernando',     'Velasco',          'Felipinho',        'Raul',             'Mycael'],
-['coxa',    'Josué',           'Dellatorre',        'Ronier',           'Coutinho',         'Rafinha',          'Pedro Morisco'],
-['fort',    'Lucero',          'Marinho',           'Yago Pikachu',     'Lucas Sasha',      'Emmanuel Martínez','João Ricardo'],
-['ceara',   'Pedro Raul',      'Fernando Sobral',   'Aylon',            'Fernandinho',      'Lucas Mugni',      'Bruno'],
-['bahia',   'Everton Ribeiro', 'Luciano Rodríguez', 'Erick Pulga',      'Jean Lucas',       'Caio Alexandre',   'Ronaldo'],
-['vito',    'Wellington Rato', 'Gustavo Mosquito',  'Matheuzinho',      'Ronald',           'Lucas Halter',     'Lucas Arcanjo'],
-['sport',   'Lucas Lima',      'Pablo',             'Du Queiroz',       'Sérgio Oliveira',  'Hereda',           'Caique'],
-['rbb',     'Jhon Jhon',       'Thiago Borbas',     'Matheus Fernandes','Juninho Capixaba', 'Laquitana',        'Cleiton']];
+['sccp',    '710-Memphis Depay',   '715-Yuri Alberto',      '742-Rodrigo Garro',    '693-Carrilho',         '681-Raniele',          '688-Hugo Souza'],
+['cep',     '698-Raphael Veiga',   '699-Facundo Torres',    '686-Maurício',         '694-Vitor Roque',      '692-Felipe Anderson',  '683-Weverton'],
+['spfc',    '711-Lucas Moura',     '769-Oscar',             '713-Luciano',          '683-Calleri',          '711-Arboleda',         '702-Rafael'],
+['santos',  '698-Neymar',          '719-Guilherme',         '681-Gabriel Bontempo', '672-Thacianno',        '693-João Schmidt',     '719-Gabriel Brazão'],
+['fla',     '696-Pedro',           '780-Arrascaeta',        '691-Jorginho',         '695-Bruno Henrique',   '716-Léo Pereira',      '728-Rossi'],
+['flu',     '686-Germán Cano',     '675-Everaldo',          '676-Ganso',            '695-Martinelli',       '697-Thiago Silva',     '687-Fábio'],
+['btfg',    '679-Arthur Cabral',   '723-Savarino',          '733-Marlon Freitas',   '706-Alex Telles',      '720-Alexander Barboza','722-John'],
+['vasco',   '731-Pablo Vegetti',   '711-P. Coutinho',       '670-Loide Augusto',    '713-Rayan',            '692-Lucas Piton',      '694-Leo Jardim'],
+['inter',   '774-Alan Patrick',    '648-Enner Valencia',    '691-Wesley',           '679-Bruno Henrique',   '688-Vitão',            '714-Rochet'],
+['gremio',  '710-Braithwaite',     '674-Edenílson',         '691-Villlasanti',      '671-Monsalve',         '680-Cristian Pavón',   '708-Tiago Volpi'],
+['cruzeiro','695-Gabriel',         '764-Kaio Jorge',        '769-Matheus Pereira',  '707-Lucas Romero',     '708-William',          '728-Cássio'],
+['atl_mg',  '729-Hulk',            '693-Rony',              '721-Gustavo Scarpa',   '707-Lyanco',           '706-Guilherme Arana',  '717-Everson'],
+['ath_pr',  '677-Zapelli',         '678-Luiz Fernando',     '660-Velasco',          '658-Felipinho',        '669-Giuliano',         '659-Mycael'],
+['coxa',    '724-Josué',           '641-Dellatorre',        '675-Ronier',           '651-Coutinho',         '693-Maicon',           '740-Pedro Morisco'],
+['fort',    '679-Lucero',          '706-Marinho',           '683-Yago Pikachu',     '681-Lucas Sasha',      '691-Emmanuel Martínez','711-João Ricardo'],
+['ceara',   '707-Pedro Raul',      '692-Fernando Sobral',   '694-Aylon',            '696-Fernandinho',      '706-Lucas Mugni',      '702-Fernando Miguel'],
+['bahia',   '707-Everton Ribeiro', '689-Luciano Rodríguez', '732-Erick Pulga',      '693-Jean Lucas',       '702-Caio Alexandre',   '713-Ronaldo'],
+['vito',    '689-Renato Kayzer',   '678-Osvaldo',           '718-Matheuzinho',      '690-Ronald',           '690-Lucas Halter',     '717-Lucas Arcanjo'],
+['sport',   '729-Lucas Lima',      '695-Pablo',             '675-Du Queiroz',       '699-Sérgio Oliveira',  '699-Hereda',           '692-Caique França'],
+['rbb',     '698-Eduardo Sasha',   '720-Jhon Jhon',         '671-Thiago Borbas',    '685-Matheus Fernandes','722-Juninho Capixaba',  '718-Cleiton']];
 //lista com a ordem das rodadas para os times
 const listaRodadas = [
     [9, 8, 7, 6, 5, 4, 3, 2, 1, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10],
@@ -456,13 +456,48 @@ function timesJogo(){
             mudaFaseCdb();
         };
     }
-
-    times = document.querySelectorAll('.time');
-    nomeBatedor = document.querySelector('#nomeBatedor');
-    idPlayer = obterIdNumerico(localStorage.getItem('timePlayer'));
     
-    nomeBatedor.innerHTML = listaTimes[idPlayer][1];
-
+    times = document.querySelectorAll('.time');
+    nomeBatedorHtml = document.querySelector('#nomeBatedor');
+    idPlayer = obterIdNumerico(localStorage.getItem('timePlayer'));
+    idAdversario = obterIdNumerico(localStorage.getItem('adversario'));
+    
+    pontuacaoBatedor = listaTimes[idPlayer][1].split("-")[0];
+    nomeBatedor = listaTimes[idPlayer][1].split("-")[1];
+    
+    pontuacaoGoleiro = listaTimes[idAdversario][6].split("-")[0];
+    
+    diferencaPontuacao = pontuacaoBatedor-pontuacaoGoleiro;
+    penaltiOpcoesDiv = document.getElementById("penaltiOpcoes");
+    penaltiOpcoes = document.querySelectorAll(".penalti");
+    if(diferencaPontuacao<=-60){
+        penaltiOpcoesDiv.style.gridTemplateColumns = "repeat(2, 1fr)";
+        for (let i=9; i>=2; i--){
+            penaltiOpcoes[i].style.display = "none";
+        }
+        localStorage.setItem("chances", 1);
+    }else if(diferencaPontuacao<=-20){
+        penaltiOpcoesDiv.style.gridTemplateColumns = "repeat(2, 1fr)";
+        for (let i=9; i>=4; i--){
+            penaltiOpcoes[i].style.display = "none";
+        }
+        localStorage.setItem("chances", 3);
+    }else if(diferencaPontuacao<=20){
+        penaltiOpcoesDiv.style.gridTemplateColumns = "repeat(3, 1fr)";
+        for (let i=9; i>=6; i--){
+            penaltiOpcoes[i].style.display = "none";
+        }
+        localStorage.setItem("chances", 5);
+    }else if(diferencaPontuacao<=60){
+        penaltiOpcoesDiv.style.gridTemplateColumns = "repeat(4, 1fr)";
+        penaltiOpcoes[8].style.display = "none";
+        penaltiOpcoes[9].style.display = "none";
+        localStorage.setItem("chances", 7);
+    }else if(diferencaPontuacao>60){
+        localStorage.setItem("chances", 9);
+    }
+    nomeBatedorHtml.innerHTML = nomeBatedor;
+    
     //define os time no placar
     times[0].id = localStorage.getItem('timePlayer');
     times[1].id = localStorage.getItem('adversario');
@@ -478,19 +513,59 @@ function mudarVez(){
     frase = document.querySelector('#fraseVez');
     placar = document.querySelectorAll('.contagemAcertos');
     nomeBatedor = document.querySelector('#nomeBatedor');
-
+    
     idPlayer = obterIdNumerico(localStorage.getItem('timePlayer'));
     idAdversario = obterIdNumerico(localStorage.getItem('adversario'));
-
+    
     //se o ultimo a chutar foi o player define a frase e o nome do adversário, e vice-versa
     if(vez=='player'){
         vez='adversario';
         frase.innerHTML = 'ESCOLHA UM LUGAR PARA DEFENDER';
-        nomeBatedor.innerHTML = listaTimes[idAdversario][((qtdAtualBatidas)%5)+1];
+        pontuacaoBatedor = listaTimes[idAdversario][((qtdAtualBatidas)%5)+1].split("-")[0]; 
+        nomeBatedor.innerHTML = listaTimes[idAdversario][((qtdAtualBatidas)%5)+1].split("-")[1]; 
+        
+        pontuacaoGoleiro = listaTimes[idPlayer][6].split("-")[0];
     }else if(vez=='adversario'){
         vez='player';
         frase.innerHTML = 'ESCOLHA UM LUGAR PARA CHUTAR';
-        nomeBatedor.innerHTML = listaTimes[idPlayer][((qtdAtualBatidas+0.5)%5)+1];
+        pontuacaoBatedor = listaTimes[idPlayer][((qtdAtualBatidas+0.5)%5)+1].split("-")[0]; 
+        nomeBatedor.innerHTML = listaTimes[idPlayer][((qtdAtualBatidas+0.5)%5)+1].split("-")[1];
+        
+        pontuacaoGoleiro = listaTimes[idAdversario][6].split("-")[0];
+    }
+    diferencaPontuacao = pontuacaoBatedor-pontuacaoGoleiro;
+    
+    penaltiOpcoesDiv = document.getElementById("penaltiOpcoes");
+    penaltiOpcoes = document.querySelectorAll(".penalti");
+    for(const opcao of penaltiOpcoes){
+        opcao.style.display = "flex";
+    }
+    if(diferencaPontuacao<=-60){
+        penaltiOpcoesDiv.style.gridTemplateColumns = "repeat(2, 1fr)";
+        for (let i=9; i>=2; i--){
+            penaltiOpcoes[i].style.display = "none";
+        }
+        localStorage.setItem("chances", 1);
+    }else if(diferencaPontuacao<=-20){
+        penaltiOpcoesDiv.style.gridTemplateColumns = "repeat(2, 1fr)";
+        for (let i=9; i>=4; i--){
+            penaltiOpcoes[i].style.display = "none";
+        }
+        localStorage.setItem("chances", 3);
+    }else if(diferencaPontuacao<=20){
+        penaltiOpcoesDiv.style.gridTemplateColumns = "repeat(3, 1fr)";
+        for (let i=9; i>=6; i--){
+            penaltiOpcoes[i].style.display = "none";
+        }
+        localStorage.setItem("chances", 5);
+    }else if(diferencaPontuacao<=60){
+        penaltiOpcoesDiv.style.gridTemplateColumns = "repeat(4, 1fr)";
+        penaltiOpcoes[8].style.display = "none";
+        penaltiOpcoes[9].style.display = "none";
+        localStorage.setItem("chances", 7);
+    }else if(diferencaPontuacao>60){
+        penaltiOpcoesDiv.style.gridTemplateColumns = "repeat(5, 1fr)";
+        localStorage.setItem("chances", 9);
     }
     //atualiza o placar
     placar[0].innerHTML = contagemPlayer;
@@ -501,22 +576,24 @@ function mudarVez(){
 //analisa se foi gol
 function analisarChute(posPlayer){
     narracao = document.querySelector('#narracaoTexto');
-
+    
     //sorteio o lugar do adversário
-    posAdversario = Math.round(Math.random()*5)+1;
+    chances = localStorage.getItem("chances");
+    posAdversario = Math.round(Math.random()*chances)+1;
     
     //verifica quem chutou
-    if(vez=='player'){
+    if(vez=='player'){ 
         //reseta o placar caso já tenha tido 5 chutes de cada
         if(qtdGeralBatidas!=5 && (qtdGeralBatidas-1)%5==0 && localStorage.getItem('competicao')=='cdb'){
             contagemPlayer = '';
             contagemAdversario = '';
         }
-
+        
         //verifica se o player acertou ou não
         if(posPlayer==posAdversario){
             contagemPlayer = contagemPlayer + ' X';
-            narracao.innerHTML = 'DEFENDEUUUUU, GOLEIRO BUSCOU NO '+posAdversario;
+            nomeGoleiro = listaTimes[idAdversario][6].split("-")[1];
+            narracao.innerHTML = 'DEFENDEUUUUU, '+nomeGoleiro+' buscou no '+posAdversario;
         }else{
             golsPlayer++;
             contagemPlayer = contagemPlayer + ' O';
@@ -526,7 +603,8 @@ function analisarChute(posPlayer){
         //verifica se o adversário acertou ou não
         if(posPlayer==posAdversario){
             contagemAdversario = contagemAdversario + ' X';
-            narracao.innerHTML = 'DEFENDEUUUUU, GOLEIRO BUSCOU NO '+posPlayer;
+            nomeGoleiro = listaTimes[idPlayer][6].split("-")[1];
+            narracao.innerHTML = 'DEFENDEUUUUU, '+nomeGoleiro+' buscou no '+posPlayer;
         }else{
             golsAdversario++;
             contagemAdversario = contagemAdversario + ' O';
