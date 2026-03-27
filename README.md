@@ -13,7 +13,6 @@ até que haja um vencedor, se o player vencer ele passa de fase até que seja ca
 - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 - ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 - ![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=%23000000)
-- ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
 <br><br>
 ### Acesse o projeto🔎
 ➤ Link Vercel: [https://portifolio-weld-rho-91.vercel.app/](https://penaltygoal.vercel.app/)
